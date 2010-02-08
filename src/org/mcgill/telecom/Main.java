@@ -27,12 +27,10 @@ public class Main {
 		if (s.equals("c"))
 		{
 			Client c = new Client();
-			c.main();			
 		}
 		else if (s.equals("g"))
 		{
 			Gateway g = new Gateway();
-			g.main();
 		}
 		else if (s.equals("smtp"))
 		{
