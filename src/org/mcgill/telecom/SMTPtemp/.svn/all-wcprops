@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp
+END
+EmailComposer.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/EmailComposer.java
+END
+AddressList.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/AddressList.java
+END
+Saveable.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/Saveable.java
+END
+OutgoingEmail.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/OutgoingEmail.java
+END
+EmailID.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/EmailID.java
+END
+Address.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/Address.java
+END
+CommStatusListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/CommStatusListener.java
+END
+FolderException.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/FolderException.java
+END
+SMTPServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/SMTPServer.java
+END
+Folder.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/Folder.java
+END
+PartStruct.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/PartStruct.java
+END
+SendMailProcess.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/SendMailProcess.java
+END
+MonitoredStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTPtemp/MonitoredStream.java
+END

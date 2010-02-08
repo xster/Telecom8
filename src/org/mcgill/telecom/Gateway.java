@@ -30,7 +30,8 @@ public class Gateway {
 		}		
 	}
 	
-	public void main(String args[]){
+	public void main(){
+		System.out.println("Run Gateway");
 		listen();
 	}
 }

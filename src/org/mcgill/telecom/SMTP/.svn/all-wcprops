@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP
+END
+SMTPHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP/SMTPHandler.java
+END
+Base64.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP/Base64.java
+END
+EmailItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP/EmailItem.java
+END
+SMTPServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP/SMTPServer.java
+END
+MonitoredOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP/MonitoredOutputStream.java
+END

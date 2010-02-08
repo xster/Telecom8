@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP/exceptions
+END
+SMTPLoginFailedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP/exceptions/SMTPLoginFailedException.java
+END
+SMTPException.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP/exceptions/SMTPException.java
+END
+SMTPUnconnectedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP/exceptions/SMTPUnconnectedException.java
+END
+SMTPErrorResponseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/TelecomLab8/svn/!svn/ver/1/Telecom8/src/org/mcgill/telecom/SMTP/exceptions/SMTPErrorResponseException.java
+END

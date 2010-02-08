@@ -45,6 +45,7 @@ public class Client {
 	}
 	
 	public void main(){
+        System.out.println("Run Client");
 		connect();
 	}
 }
