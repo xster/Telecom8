@@ -1,0 +1,3 @@
+#! /bin/zsh
+javac org/mcgill/telecom/Client.java
+java org.mcgill.telecom.Client
