@@ -1,3 +1,2 @@
 #! /bin/zsh
-javac org/mcgill/telecom/Gateway.java
-java org.mcgill.telecom.Gateway
+javac org/mcgill/telecom/Gateway.java && java org.mcgill.telecom.Gateway

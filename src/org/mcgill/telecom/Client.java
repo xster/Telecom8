@@ -46,9 +46,11 @@ public class Client {
 		try{
 			command = ask("Please enter command:\n>");
 			while (!command.equals("exit")){
-				json = new JSONObject().put("command", command);
-				sendMessage(json.toString());
-				print(receive.readObject());
+				json = composeMessage(command);
+				if (json != null){
+					sendMessage(json.toString());
+					print(receive.readObject());
+				}
 				command = ask("Please enter command:\n>");
 			}
 		}
@@ -66,6 +68,42 @@ public class Client {
 		}
 		catch(IOException ex){
 			return "";
+		}
+	}
+	
+	private JSONObject composeMessage(String command){
+		try{
+			JSONObject message = new JSONObject().put("command", command);
+			if (command.equals("sendmail")){
+				String query = ask("To: ");
+				message.put("to", query);
+				query = ask("Subject: ");
+				message.put("subject", query);
+				query = "";
+				print("Please enter email body.\n(End message with a '.' on a new line)");
+				String last;
+				do{
+					last = ask("");
+					query += last + "\n";
+				}while(!last.equals("."));
+				message.put("body", query);
+			}
+			else if (command.startsWith("header")){
+				String[] split = command.split(" ");
+				if (split.length == 2 && split[1].matches("^\\d+$")){
+					message.put("command", split[0]);
+					message.put("email", Integer.parseInt(split[1]));
+				}
+				else{
+					print("Please specify the header to retrieve\nie [header 1]");
+					return null;
+				}
+			}
+			return message;
+		}
+		catch (JSONException ex){
+			print("Bad command");
+			return null;
 		}
 	}
 	

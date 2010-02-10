@@ -2,6 +2,7 @@ package org.mcgill.telecom;
 import java.net.*;
 import java.io.*;
 import org.json.*;
+import org.mcgill.telecom.IMAP.*;
 
 public class Gateway {
 	ServerSocket server;
@@ -12,26 +13,31 @@ public class Gateway {
 	public Gateway(){
 		try{
 			server = new ServerSocket(1337);
-			System.out.println("Waiting for connection ...");
-			clientConnection = server.accept();
-			System.out.println(clientConnection.getInetAddress() + " has connected");
-			send = new ObjectOutputStream(clientConnection.getOutputStream());
-			send.flush();
-			receive = new ObjectInputStream(clientConnection.getInputStream());
+			while(true){
+				System.out.println("\nWaiting for connection ...");
+				clientConnection = server.accept();
+				System.out.println(clientConnection.getInetAddress() + " has connected");
+				send = new ObjectOutputStream(clientConnection.getOutputStream());
+				send.flush();
+				receive = new ObjectInputStream(clientConnection.getInputStream());
 			
-			try {
-				String[] login = (String[]) receive.readObject();
-				System.out.print(login[0] + " " + login[1] + "\n");
+				try {
+					do{
+						String[] login = (String[]) receive.readObject();
+						Boolean success = IMAPHandler.login(login[0], login[1]);
+						if (!success){sendMessage("Wrong login");}
+					}while(!success)
+	
+					sendMessage("Connected");
+					prompt();
 				
-				sendMessage("Connected");
-				prompt();
-				
-			} catch (ClassNotFoundException e) {
-				e.printStackTrace();
+				} catch (ClassNotFoundException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 		catch(IOException ex){
-			
+			System.out.println("Error getting connection");
 		}		
 	}
 	
@@ -58,6 +64,12 @@ public class Gateway {
 			System.out.println(command);
 			if (command.equals("folders")){
 				return "folder\nfolder\n";
+			}
+			else if (command.equals("sendmail")){
+				return "To: " + json.getString("to") + "\nSubject: " + json.getString("subject") + "\nBody:" + json.getString("body");
+			}
+			else if (command.equals("header")){
+				return "header " + json.getString("email");
 			}
 			else{
 				return "nothing";
